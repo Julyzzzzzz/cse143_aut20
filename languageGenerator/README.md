@@ -66,14 +66,18 @@ The base case occurs when the `target` is a terminal symbol. Otherwise, in the r
 
 Split a production rule on one or more whitespace characters by calling `split("\\s+")`.
 
-`String text = "lots of spaces";
+```
+String text = "lots of spaces";
 String[] terms = text.split("\\s+");
-// ["lots", "of", "spaces"]`
+// ["lots", "of", "spaces"]
+```
 
 Call the `trim` method to remove leading and trailing whitespace from the final result.
 
-`String text = "   lots   of  spaces    ";
+```
+String text = "   lots   of  spaces    ";
 String trimmed = text.trim();
-// "lots   of  spaces"'
+// "lots   of  spaces"
+```
 
 [Original assessment specification on the Course Website](https://courses.cs.washington.edu/courses/cse143/20au/language-generator/)
